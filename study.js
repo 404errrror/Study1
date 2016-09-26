@@ -3,7 +3,7 @@ var io = require('socket.io')({
 });
 
 var userNum = 1;
-io.attach(46455);
+io.attach(process.env.PORT || 3000);
 
 //var port = process.env.Port || 3000;
 
