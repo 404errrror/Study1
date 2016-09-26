@@ -3,9 +3,9 @@ var io = require('socket.io')({
 });
 
 var userNum = 1;
-io.attach(3000);
+io.attach(46455);
 
-var port = process.env.Port || 3000;
+//var port = process.env.Port || 3000;
 
 io.on('connection', function(socket) {
     console.log('Server Connect!!');
